@@ -1,17 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react"
+import ReactDOM from "react-dom"
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const FamilyMembers = () => {
+  return (
+    <div>
+      <h2><FamilyMemberRole /></h2>
+      <h3><FamilyMemberName /></h3>
+    </div>
+  )
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const FamilyMemberRole = () => {
+  return (
+    <h2>Father</h2>
+  )
+}
+
+const FamilyMemberName = () => {
+  return (
+    <h3>Kevin Nelson</h3>
+  )
+}
+
+ReactDOM.render(<FamilyMembers />, document.getElementById("root"))
