@@ -1,25 +1,25 @@
 import React from "react"
 import ReactDOM from "react-dom"
 
-const FamilyMembers = () => {
+const Animals = () => {
   return (
     <div>
-      <h2><FamilyMemberRole /></h2>
-      <h3><FamilyMemberName /></h3>
+      <AnimalType />
+      <AnimalBreed />
     </div>
   )
 }
 
-const FamilyMemberRole = () => {
+const AnimalType = () => {
   return (
-    <h2>Father</h2>
+    <h2>Big Cat</h2>
   )
 }
 
-const FamilyMemberName = () => {
+const AnimalBreed = () => {
   return (
-    <h3>Kevin Nelson</h3>
+    <h3>Lion</h3>
   )
 }
 
-ReactDOM.render(<FamilyMembers />, document.getElementById("root"))
+ReactDOM.render(<Animals />, document.getElementById("root"))
